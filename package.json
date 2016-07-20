@@ -1,0 +1,27 @@
+{
+  "name": "code-generator",
+  "version": "1.0.0",
+  "description": "a code generator",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/lodash": "0.0.28",
+    "chalk": "^1.1.3",
+    "ejs": "^2.4.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kpyu/code-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kpyu/code-generator/issues"
+  },
+  "homepage": "https://github.com/Kpyu/code-generator#readme"
+}
