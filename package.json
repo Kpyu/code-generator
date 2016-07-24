@@ -12,7 +12,8 @@
     "gulp": "^3.9.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc --noEmitOnError --outDir './build' index.ts && node build/index"
   },
   "repository": {
     "type": "git",

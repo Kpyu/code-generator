@@ -1,12 +1,18 @@
-// import chalk = require('chalk');
-// import ejs = require('ejs');
-// import http = require("http");
-
-// http.createServer(function (req, res) {
-//     res.writeHead(200, {'Content-Type': 'text/plain'});
-//     res.end('Hello World\n');
-// }).listen(1337, '127.0.0.1');
-// import tsd = require('tsd');
-// console.log('Server running at http://127.0.0.1:1337/');
 /// <reference path="typings/tsd.d.ts" />
-import * as _ from 'ejs';
+/// <reference path="src/component/index.d.ts" />
+
+import * as _ from 'lodash';
+import ejs = require('ejs');
+import chalk = require('chalk');
+import { Generator } from './src/generator';
+
+const generator = new Generator({
+  info: 'app',
+  loader: '加载器配置',
+  compiler:'编译器配置'
+});
+
+
+generator.init();
+generator.loadTemplate('模板路径');
+generator.start();
