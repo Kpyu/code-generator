@@ -1,5 +1,5 @@
-import { Loader } from './Component/Loader';
-import { Compiler } from './Component/Compiler';
+import { Loader } from './component/Loader';
+import { Compiler } from './component/Compiler';
 import { cliList} from './Util'
 
 export class Generator{
